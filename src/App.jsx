@@ -1,17 +1,11 @@
 import { useState } from "react";
+import UserDataDisplay from "./components/UserDataDisplay";
 
 export default function App() {
   const [userData, setUserData] = useState([]);
   return (
     <>
-      <section>
-        {userData.map((datum, idx) => (
-          <div key={idx}>
-            <p>user name: {datum.name}</p>
-            <p>user ID: {datum.id}</p>
-          </div>
-        ))}
-      </section>
+      <UserDataDisplay userData={userData} />
       <section></section>
     </>
   );
