@@ -74,7 +74,7 @@ export default function App() {
         {currentFormsData.map((datum) => (
           <RegisterForm key={datum.id} data={datum} onChange={handleChange} />
         ))}
-        <button type="button" onClick={handleAddUser}>
+        <button type="button" onClick={handleAddUser} className="mt-4">
           Add User
         </button>
         <button type="submit">Create a new account</button>

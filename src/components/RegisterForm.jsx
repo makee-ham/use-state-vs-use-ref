@@ -1,6 +1,6 @@
 export default function RegisterForm({ data, onChange }) {
   return (
-    <div>
+    <div className="w-3xl border border-blue-600 p-4">
       <label>
         Your name:
         <input
