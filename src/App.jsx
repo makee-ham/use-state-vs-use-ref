@@ -6,7 +6,13 @@ export default function App() {
   return (
     <>
       <UserDataDisplay userData={userData} />
-      <section></section>
+      <section>
+        <div></div>
+        <div>
+          <button type="button">Add User</button>
+          <button type="button">Create a new account</button>
+        </div>
+      </section>
     </>
   );
 }
