@@ -7,10 +7,10 @@ export default function UserDataDisplay({ userData }) {
           <p>Click 'Add User' to enter your information.</p>
         </>
       ) : (
-        userData.map((datum, idx) => (
+        userData.map((user, idx) => (
           <div key={idx}>
-            <p>user name: {datum.name}</p>
-            <p>user ID: {datum.id}</p>
+            <p>user name: {user.name}</p>
+            <p>user ID: {user.id}</p>
           </div>
         ))
       )}
