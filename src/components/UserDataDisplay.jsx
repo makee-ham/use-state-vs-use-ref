@@ -1,7 +1,10 @@
-export default function UserDataDisplay({ userData }) {
+import { memo } from "react";
+
+export const UserDataDisplay = memo(({ userData }) => {
+  console.log(userData);
   return (
     <section className="mb-4">
-      {userData.length <= 0 ? (
+      {userData?.length <= 0 ? (
         <>
           <h2 className="text-2xl font-bold">
             This place feels lonely🥺 Add some users!
@@ -9,13 +12,13 @@ export default function UserDataDisplay({ userData }) {
           <p>Click 'Add User' to enter your information.</p>
         </>
       ) : (
-        userData.map((user, idx) => (
-          <div key={idx} className="w-3xl border border-red-600 p-4">
-            <p>user name: {user.name}</p>
-            <p>user ID: {user.id}</p>
+        userData.map((user) => (
+          <div key={user.id} className="w-3xl border border-red-600 p-4">
+            <p>user name: {user.username}</p>
+            <p>user ID: {user.userId}</p>
           </div>
         ))
       )}
     </section>
   );
-}
+});
