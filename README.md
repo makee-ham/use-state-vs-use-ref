@@ -13,3 +13,9 @@
 5. 조건:
    - form 유효성검사 1: 빈 문자열 제출은 안 됨
    - form 유효성검사 2: 입력하고 있는 이름은, 앞서 입력된 유저 데이터 + 현재 동시 입력 중인 다른 form 창의 이름과 겹치면 안 됨 (유니크)
+
+---
+
+250616
+form 리팩토링 시 참고
+https://jeonghwan-kim.github.io/2023/06/24/lecture-react-season2-part4-ch2#getfieldprops
