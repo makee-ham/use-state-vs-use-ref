@@ -1,7 +1,6 @@
 import { memo } from "react";
 
 export const UserDataDisplay = memo(({ userData }) => {
-  console.log(userData);
   return (
     <section className="mb-4">
       {userData?.length <= 0 ? (
